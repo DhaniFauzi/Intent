@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile"
+        android:layout_width="181dp"
+        android:layout_height="167dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/iconprofil"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="25dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/register"
+        android:layout_width="181dp"
+        android:layout_height="167dp"
+        android:layout_toRightOf="@id/profile"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/passingdata"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="25dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/github"
+        android:layout_width="181dp"
+        android:layout_height="167dp"
+        android:layout_below="@id/register"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/github"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Github"
+            android:textSize="25dp"
+            android:layout_gravity="center|bottom"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/exit"
+        android:layout_width="181dp"
+        android:layout_height="167dp"
+        android:layout_toRightOf="@id/github"
+        android:layout_below="@id/register"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/exit"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textSize="25dp"
+            android:layout_gravity="center|bottom"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
