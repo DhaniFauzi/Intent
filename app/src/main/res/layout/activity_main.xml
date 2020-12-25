@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/profile"
+        android:id="@+id/cv_profile"
         android:layout_width="181dp"
         android:layout_height="167dp"
         android:layout_marginLeft="15dp"
@@ -33,10 +33,10 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/register"
+        android:id="@+id/cv_register"
         android:layout_width="181dp"
         android:layout_height="167dp"
-        android:layout_toRightOf="@id/profile"
+        android:layout_toRightOf="@id/cv_profile"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="15dp"
         >
@@ -63,7 +63,7 @@
         android:id="@+id/github"
         android:layout_width="181dp"
         android:layout_height="167dp"
-        android:layout_below="@id/register"
+        android:layout_below="@id/cv_register"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         >
@@ -92,7 +92,7 @@
         android:layout_width="181dp"
         android:layout_height="167dp"
         android:layout_toRightOf="@id/github"
-        android:layout_below="@id/register"
+        android:layout_below="@id/cv_register"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         >
@@ -115,5 +115,14 @@
             />
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnKalkulator"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Kalkulator"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="125dp"
+        />
 
 </RelativeLayout>

@@ -12,15 +12,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        profile.setOnClickListener {
-            Intent(this, profile::class.java).also {
-                startActivity(it)
-            }
+        cv_profile.setOnClickListener {
+            startActivity(Intent(this, profile::class.java))
         }
-        register.setOnClickListener {
-            Intent(this, register::class.java).also {
-                startActivity(it)
-            }
+        cv_register.setOnClickListener {
+            startActivity(Intent(this, register::class.java))
         }
         github.setOnClickListener {
             intent = Intent(Intent.ACTION_VIEW)
@@ -30,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         exit.setOnClickListener {
             finish()
         }
+        btnKalkulator.setOnClickListener {
+            startActivity(Intent(this, kalkulator::class.java))
+        }
+
         }
 
     }

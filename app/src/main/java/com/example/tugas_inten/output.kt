@@ -13,7 +13,7 @@ class output : AppCompatActivity() {
         val umur = intent.getIntExtra("EXTRA_AGE", 0)
         val bdstudi = intent.getStringExtra("EXTRA_BDSTUDI")
 
-        val hasil = "nama anda adalah $nama umur kamu $umur dan kamu belajar di $bdstudi"
+        val hasil = "nama anda adalah $nama umur kamu $umur dan kamu berjurusan $bdstudi"
         Output.text = hasil
     }
 }
