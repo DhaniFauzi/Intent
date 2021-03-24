@@ -75,6 +75,6 @@ class kalkulator : AppCompatActivity() {
             return a * b
         }
         fun bagi(a: Double, b: Double): Double {
-        return a / b
+            return a / b
     }
     }
